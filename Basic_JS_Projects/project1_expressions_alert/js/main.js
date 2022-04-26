@@ -25,4 +25,9 @@ let z = 1794;
 let a = 29065;
 
 //expression
-document.write(a+z);
+document.write(a + z);
+
+//
+function displayDate() {
+    document.getElementById("result").innerHTML = Date();
+}
