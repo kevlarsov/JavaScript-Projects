@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>THE FINAL COUNTDOWN</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		
+        <!--COUNTDOWN-->
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+
+        <br><br><br>
+
+        <!--SLIDESHOW CONTAINER-->
+        <div class="ss-container">
+
+            <!--IMAGES WITH NUMBER AND CAPTION-->
+            <div class="slides fade">
+                <div class="number">1 / 2</div>
+                <img src="./img/1.jpg" alt="" width="100%">
+                <div class="caption">Well gosh darn look at that beauty...</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="number">2 / 2</div>
+                <img src="./img/2.jpg" alt="" width="100%">
+                <div class="caption">This one's pretty cool too I guess...</div>
+            </div>
+
+            <!--NEXT, PREV BUTTONS-->
+            <a class="prev" onclick="plusslides(-1)">&#10094;</a>
+            <a class="next" onclick="plusslides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <!--DOTS, CIRCLES-->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentslide(1)"></span>
+            <span class="dot" onclick="currentslide(2)"></span>
+        </div>
+
+        <!--JS LINK-->
+        <script src="./js/main.js"></script>
+	</body>
+</html>
