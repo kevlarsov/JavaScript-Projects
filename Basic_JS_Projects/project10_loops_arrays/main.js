@@ -5,6 +5,24 @@ function sl() {
     document.getElementById("out").innerHTML = length;
 }
 
+//CUSTOM ARRAY
+function arrayfunc() {
+    let audi = [];
+    audi[0] = "TT/TTS";
+    audi[1] = "A3/S3";
+    audi[2] = "A4/S4";
+    audi[3] = "A5/S5";
+    audi[4] = "A6/S6";
+    audi[5] = "A7/S7";
+    audi[6] = "Q3";
+    audi[7] = "Q5/SQ5";
+    audi[8] = "Q7/SQ7";
+    audi[9] = "Q8/SQ8";
+    audi[10] = "R8";
+    audi[11] = "RS Models";
+    document.getElementById("array").innerHTML = "You chose the following Audi model: " + audi[10] + " ... Great choice!";
+}
+
 //CUSTOM FOR LOOP
 let cars = ["Audi", "BMW", "Jaguar", "Mercedes-Benz", "Porsche", "Volkswagen"];
 let content = "";
