@@ -11,7 +11,7 @@ let car = {
     year: "2020 ",
     make: "BMW ",
     model: "M5",
-    color: "blue ",
+    color: "black ",
     description : function() {
         return "I wish I drove a " + this.color + this.year + this.make + this.model + "...";
     }
@@ -50,6 +50,19 @@ function arrayfunc() {
     audi[11] = "RS Models";
     document.getElementById("array").innerHTML = "You chose the following Audi model: " + audi[10] + " ... Great choice!";
 }
+
+//LOOP BREAK/CONTINUE
+let text = "";
+for (let i = 0; i < 10; i++) {
+
+    //SKIP 1
+    if (i === 1) { continue; }
+    
+    //BREAK LOOP AT 8
+    if (i === 8) { break; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("breakcont").innerHTML = text;
 
 //CUSTOM FOR LOOP
 let cars = ["Audi", "BMW", "Jaguar", "Mercedes-Benz", "Porsche", "Volkswagen"];
