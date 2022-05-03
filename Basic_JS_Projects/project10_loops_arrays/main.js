@@ -1,8 +1,36 @@
+//FUNCTION RETURN
+let z = dasfunc(372, 904);
+document.getElementById("funcreturn").innerHTML = z;
+
+function dasfunc(a, b) {
+    return a * b;
+}
+
+//OBJECT RETURN
+let car = {
+    year: "2020 ",
+    make: "BMW ",
+    model: "M5",
+    color: "blue ",
+    description : function() {
+        return "I wish I drove a " + this.color + this.year + this.make + this.model + "...";
+    }
+};
+document.getElementById("objreturn").innerHTML = car.description();
+
 //STRING LENGTH
 function sl() {
     let text = "Whale hello there";
     let length = text.length;
     document.getElementById("out").innerHTML = length;
+}
+
+//CONST, PLAYER1 STATS
+function constfunc() {
+    const player1 = {name:"Kevin Cottrell", team:"CO Avalanche", position:"Defenseman", goals:5, assists:7, PM:38};
+    player1.goals = 6;
+    player1.fights = 2;
+    document.getElementById("const").innerHTML = player1.position + " " + player1.name + " has scored " + player1.goals + " times, assisted on " + player1.assists + " goals, been in " + player1.fights + " fights, and spent " + player1.PM + " minutes in the penalty box this season.";
 }
 
 //CUSTOM ARRAY
