@@ -54,17 +54,17 @@ button:hover {
     background-color: lightgray;
 }
 
-.AC-func {
+.all-clear {
     background-color: red;
     border-color: darkslategray;
     color: #fff;
 }
 
-.AC-func:hover {
+.all-clear:hover {
     background-color: darkred;
 }
 
-.EQ-oper {
+.equal-sign {
     background-color: blue;
     border-color: darkslategray;
     color: #fff;
@@ -72,7 +72,7 @@ button:hover {
     grid-area: 2/4/6/5;
 }
 
-.EQ-oper:hover {
+.equal-sign:hover {
     background-color: darkblue;
 }
 

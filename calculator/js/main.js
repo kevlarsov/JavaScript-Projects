@@ -7,7 +7,7 @@ const calculator = {
     //
     wait_second_operand: false,
     //
-    operator: null,
+    operator: null
 };
 
 //
@@ -88,7 +88,7 @@ function update_display() {
 update_display();
 
 //
-const keys = document.querySelector('.calculator_keys');
+const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
     //
     const { target } = event;
