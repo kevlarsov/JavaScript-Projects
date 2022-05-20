@@ -59,3 +59,12 @@ function getTopping(runningTotal,text1) {
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 }
+
+//PN FORM VALIDATION
+function validateform() {
+    let x = document.forms['myform']['pn'].value;
+    if (x == '') {
+        alert('Please enter your phone number!');
+        return false;
+    }
+}

@@ -1,10 +1,16 @@
-body {
-    background-color: rebeccapurple;
+html {
+    background-color: black;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    color: gold;
+body {
+    background-color: rebeccapurple;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h3 {
@@ -53,6 +59,12 @@ div {
     float: right;
 }
 
+.pnform {
+    position: absolute;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
 #showText {
     width: 200px;
     height: 190px;
@@ -71,4 +83,17 @@ div {
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
+}
+
+.shaker {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    color: gold;
+    animation: mover 5s infinite;
+}
+
+@keyframes mover {
+    0% {left: 25px;}
+    50% {left: 65px;}
+    100% {left: 25px;}
 }
